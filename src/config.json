@@ -1,0 +1,24 @@
+{
+	"module" : "producer",
+	"language": "java",
+	"version": "0.0.1",
+	"broker_servers": [
+		{
+			"host": "localhost",
+			"port": "9092"
+
+		}
+	],
+	"topics": [
+		"quickstart-events"
+	],
+	"partitions": 1,
+	"replication": 1,
+	"acks": "all",
+	"retries": 0,
+	"batch_size": 16384,
+	"linger_ms": 1,
+	"buffer_memory": 33554432,
+	"key_serializer": "org.apache.kafka.common.serialization.StringSerializer",
+	"value_serializer": "org.apache.kafka.common.serialization.StringSerializer"
+}
